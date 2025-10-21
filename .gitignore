@@ -1,0 +1,21 @@
+# Logs
+logs
+*.log
+*.nsi
+*.exe
+*.spec
+
+node_modules
+build
+webdist
+*/__pycache__
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

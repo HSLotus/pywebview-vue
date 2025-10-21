@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = true
+name = "pip_conf_index_global"
+
+[packages]
+pywebview = "==5.4"
+fastapi = "==0.104.1"
+requests = "==2.32.3"
+pyinstaller = "==6.12.0"
+uvicorn = {extras = ["standard"], version = "==0.24.0"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.13"

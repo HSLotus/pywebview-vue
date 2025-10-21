@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES5", // 目标js的版本
+    "strict": true, // 严格模式
+    "jsx": "preserve", //
+    "importHelpers": true,
+    "moduleResolution": "node", // 设为node,才能解析imort xx from 'xx'
+    "allowJs": true,
+    "esModuleInterop": true,
+    "module": "CommonJS", // 使用 CommonJS 模块规范
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": false, // 生成sourceMap
+    // "composite": true,
+    "types": ["node"],
+    "baseUrl": ".",
+    "outDir": "./webdist",
+    "rootDir": "./frontend/src",
+    "paths": {
+      "@/*": ["frontend/src/*"]
+    },
+  },
+  "include": [
+    "frontend/src/**/*.ts",
+    "frontend/api/**/*.ts",
+    "frontend/src/**/*.tsx",
+    "frontend/src/**/*.vue",
+    "frontend/src/env.d.ts",
+    "./auto-imports.d.ts",
+    "vite-env.ts"
+  ],
+  "exclude": ["node_modules"],
+  "suppressImplicitAnyIndexErrors": true
+}

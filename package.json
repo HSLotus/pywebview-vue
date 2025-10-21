@@ -1,0 +1,49 @@
+{
+  "name": "Pywebview-Vue",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "dev:py": "python main.py",
+    "build:py": "pipenv run pyinstaller --onefile --windowed --icon \"webdist/favicon.ico\" --add-data \"webdist;dist\" main.py"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@vitejs/plugin-legacy": "^6.0.2",
+    "@vue/shared": "^3.4.5",
+    "autoprefixer": "^10.4.14",
+    "axios": "1.7.7",
+    "cross-env": "^7.0.3",
+    "element-plus": "^2.3.12",
+    "less": "^4.2.0",
+    "lodash-es": "^4.17.21",
+    "pinia": "^2.1.4",
+    "terser": "^5.39.0",
+    "tslib": "^2.8.1",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.3.2",
+    "@tsconfig/node18": "^18.2.0",
+    "@types/node": "^18.17.0",
+    "@types/webpack-env": "^1.18.8",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitejs/plugin-vue-jsx": "^4.1.2",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "@vue/eslint-config-typescript": "^13.0.0",
+    "@vue/tsconfig": "^0.4.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-vue": "^9.15.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.0.0",
+    "typescript": "~5.1.6",
+    "typescript-eslint": "^8.46.1",
+    "unplugin-auto-import": "^20.2.0",
+    "unplugin-vue-components": "^29.1.0",
+    "vite": "^4.4.6",
+    "vue-tsc": "^1.8.6"
+  }
+}
